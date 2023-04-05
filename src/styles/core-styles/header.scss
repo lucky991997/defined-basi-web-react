@@ -1,0 +1,35 @@
+@use "../index.scss" as *;
+
+.header {
+  @include flex(center, space-between);
+  width: 100%;
+  height: 78px;
+  background-color: $bg-primary;
+  position: fixed;
+  border-bottom: $borderDefault;
+  padding: 6px 0 6px 24px;
+
+  &-title {
+    @include flex(center, flex-start);
+    width: 100%;
+    position: relative;
+
+    h1 {
+      font-size: 32px;
+      line-height: 32px;
+      font-weight: 700;
+      font-family: $fontFamily;
+    }
+    img {
+      height: 80px;
+      padding: 4px 2px;
+    }
+  }
+  &-event {
+    @include flex(center,flex-start);
+    padding-right: 64px;
+    button:first-child {
+        margin: 0 12px;
+    }
+  }
+}

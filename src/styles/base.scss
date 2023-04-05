@@ -1,0 +1,16 @@
+@use "./index.scss" as *;
+
+.primary-btn {
+  background-color: $bg-primary;
+  &:hover {
+    background-color: $bg-secondary;
+  }
+}
+.secondary-btn {
+  background-color: $bg-secondary;
+  color: $txt-color-primary;
+  &:hover {
+    background-color: $bg-primary;
+    color: $txt-color-secondary;
+  }
+}

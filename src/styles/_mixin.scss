@@ -1,0 +1,14 @@
+@mixin flex($alignItems, $justifyContent) {
+    display: flex;
+    align-items: $alignItems;
+    justify-content: $justifyContent;
+}
+
+
+@mixin labelBtn () {
+    font-size: 16px;
+    font-weight: normal;
+    font-family: $fontFamily;
+    color: $txt-color-secondary;
+    line-height: 16px;
+}

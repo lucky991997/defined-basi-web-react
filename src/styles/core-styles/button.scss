@@ -1,0 +1,25 @@
+@use "../index.scss" as *;
+
+.btn {
+  @include labelBtn();
+  @include flex(center, flex-start);
+  background-color: $bg-primary;
+  height: 40px;
+  padding: 7px;
+  border: $borderBtn;
+  border-radius: $borderRadiusBtn;
+  color: $txt-color-secondary;
+  transition: $transitionDefault;
+  cursor: pointer;
+  &:hover {
+    color: $txt-color-primary;
+    background-color: $bg-secondary;
+  }
+  span {
+    text-align: left;
+    min-width: 80px;
+  }
+  svg {
+    margin-right: 7px;
+  }
+}
